@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Untitled</title>
+<script type="text/javascript" src="lib/dojo/dojo/dojo.js" data-dojo-config="'parseOnLoad':true,'async':true,'packages':[{'name':'gridx','location':'../gridx'},{'name':'clipart','location':'../../clipart'},{'name':'maqettaSamples','location':'../../../samples'},{'name':'maqetta','location':'../../maqetta'},{'name':'shapes','location':'../../shapes'},{'name':'zazl','location':'../../zazl'},{'name':'widgets','location':'../../custom'}],'themeMap':[['Android','',['themes/android/android.css']],['BlackBerry','',['themes/blackberry/blackberry.css']],['iPad','',['themes/ipad/ipad.css']],['iPhone','',['themes/iphone/iphone.css']],['.*','',['themes/iphone/iphone.css']]],'mblThemeFiles':[],'mblLoadCompatPattern':''"></script>
+<script type="text/javascript">
+require([
+  "dijit/dijit",
+  "dojo/parser",
+  "maqetta/space",
+  "maqetta/AppStates",
+  "dojox/mobile",
+  "dojox/mobile/deviceTheme",
+  "dojox/mobile/Button",
+  "dojox/mobile/TextBox",
+  "shapes/Line",
+  "shapes/Text"
+]);
+</script>
+<style>@import "themes/claro/claro.css";@import "lib/shapes/shapes.css";@import "app.css";
+</style>
+<script type="text/javascript" src="app.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"></meta>
+</head>
+<body data-maq-device="iphone" data-maq-flow-layout="false" data-maq-comptype="mobile" data-maq-ws="collapse" class="claro" data-maq-appstates="{}" id="myapp">
+ <span data-dojo-type="shapes/Line" points="1.046875,0.515625,1.046875,152.515625,284.046875,152.515625,0,0" startarrow="none" style="position: absolute; z-index: 900; background-color: transparent; stroke: red; width: 291.047px; height: 158.516px; left: 14.96875px; top: 280.75px;"></span><button data-dojo-type="dojox/mobile/Button" id="bt1" style="position: absolute; z-index: 900; background-color: #9272e4; height: 60px; width: 300px; left: 10px; top: 149px;" onclick="calcular()">
+   Calculer</button>
+ <h1 label="diagonale calc" data-dojo-type="dojox/mobile/Heading" style="padding: 0px; width: 300px; left: 10px; top: 5px; position: absolute; z-index: 900;"></h1>
+ <label style="position: absolute; z-index: 900; left: 17px; top: 62px;">
+   Cot&ecirc; b</label>
+ <label style="position: absolute; z-index: 900; left: 17px; top: 102.5px;">
+   Cot&ecirc; c</label>
+ <label style="position: absolute; z-index: 900; left: 17px; top: 233px;">
+   Diagonale a</label>
+ <input id="num1" autofocus="true" type="number" style="border: 1px solid black; border-radius: 6px; -moz-border-radius: 6px; position: absolute; z-index: 900; height: 23px; left: 136px; top: 58.5px; text-align: right; width: 170px;"></input>
+ <input id="num2" type="number" style="border: 1px solid black; border-radius: 6px; -moz-border-radius: 6px; position: absolute; z-index: 900; left: 136px; top: 99px; text-align: right; height: 23px; width: 170px;"></input>
+ <input id="res" type="number" style="border: 1px solid black; border-radius: 6px; -moz-border-radius: 6px; position: absolute; z-index: 900; width: 170px; height: 23px; text-align: right; background-color: #bde9bd; left: 136px; top: 229.5px;" readonly="true"></input>
+ <span data-dojo-type="shapes/Text" style="position: absolute; z-index: 900; font-size: 18px; left: 204px; top: 287px;">a&sup2; = b&sup2; + c&sup2;<br>
+ a = &radic;b&sup2; + c&sup2;</br>
+</span>
+<label id="b" style="position: absolute; z-index: 900; left: 31px; top: 362.015625px;">
+b</label>
+<label id="a" style="position: absolute; z-index: 900; left: 103.015625px; top: 342.015625px;">
+a</label>
+<label id="c" style="position: absolute; z-index: 900; left: 107.75px; top: 405px;">
+c</label>
+</body>
+</html>
