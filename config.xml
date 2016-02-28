@@ -3,10 +3,10 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
     id        = "io.cordova.helloCordova"
     version   = "2.0.0">
-<name>BachesCalc</name>
+<name>EquerreCalc</name>
 
 <description>
-    Calculateur de baches.
+    Calculateur de Equerres.
 </description>
 
 <author href="paulo3.ddns.net" email="pr210976@gmail.com">
